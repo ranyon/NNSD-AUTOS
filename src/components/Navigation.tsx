@@ -10,7 +10,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', icon: Home, href: '/' },
-    { name: 'Inventory', icon: Car, href: '/inventory' },
+    { name: 'Sold', icon: Car, href: '/inventory' },
     { name: 'About', icon: Info, href: '/about' },
     { name: 'Services', icon: Settings, href: '/services' },
   ];

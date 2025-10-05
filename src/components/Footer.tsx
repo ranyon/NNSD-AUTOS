@@ -123,15 +123,15 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-gray-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">123 Auto Plaza Drive</p>
+                  <p className="text-gray-300">CANADA & USA</p>
                   <p className="text-gray-300">City, State 12345</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-gray-400 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">+1 (555) 123-4567</p>
-                  <p className="text-gray-300">+1 (555) 987-6543</p>
+                  <p className="text-gray-300">+1 240-432-3697 (USA)</p>
+                  <p className="text-gray-300">+1 437-860-5644 (CANADA)</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">

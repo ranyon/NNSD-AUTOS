@@ -36,26 +36,26 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
-      description: "Call us during business hours"
+      details: ["240-432-3697 (USA)", "437-860-5644 (CANADA)"],
+      description: "Available 24/7"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@nsdautos.com", "sales@nsdautos.com"],
-      description: "We'll respond within 24 hours"
+      details: ["info@nsdautos.com", "Enquiries@nsdautos.com"],
+      description: "Reply times under 8 hours"
     },
     {
       icon: MapPin,
       title: "Location",
-      details: ["123 Auto Plaza Drive", "City, State 12345"],
-      description: "Visit our showroom"
+      details: ["Canada & USA"],
+      description: "Serving customers across North America"
     },
     {
       icon: Clock,
       title: "Hours",
-      details: ["Mon-Fri: 9AM-8PM", "Sat-Sun: 10AM-6PM"],
-      description: "Extended weekend hours"
+      details: ["Open 24/7"],
+      description: "Reply times under 8 hours"
     }
   ];
 

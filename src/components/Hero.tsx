@@ -70,7 +70,7 @@ const Hero = () => {
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-gradient-to-r from-white to-gray-200 text-black font-bold rounded-lg shadow-lg hover:shadow-white/25 transition-all duration-300"
               >
-                Explore Inventory
+                Sold Cars
               </motion.button>
             </Link>
             

@@ -176,23 +176,6 @@ const CarShowcase = () => {
             </motion.div>
           ))}
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-center mt-12"
-        >
-          <Link to="/inventory">
-            <motion.button
-              whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(0, 0, 0, 0.3)" }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-black to-gray-800 text-white font-bold rounded-lg shadow-lg hover:shadow-black/25 transition-all duration-300"
-            >
-              View Full Inventory
-            </motion.button>
-          </Link>
-        </motion.div>
       </div>
       
       <TestDriveModal

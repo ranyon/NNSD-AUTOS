@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Star, Fuel, Settings, Users, Calendar, Shield, Award, Zap } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 interface CarDetailsModalProps {
   isOpen: boolean;
@@ -22,6 +23,8 @@ interface CarDetailsModalProps {
 }
 
 const CarDetailsModal: React.FC<CarDetailsModalProps> = ({ isOpen, onClose, car }) => {
+  const navigate = useNavigate();
+
   if (!car) return null;
 
   const detailedSpecs = [
@@ -50,8 +53,9 @@ const CarDetailsModal: React.FC<CarDetailsModalProps> = ({ isOpen, onClose, car 
     alert(`Test drive request for ${car.name}. Our team will contact you to schedule an appointment.`);
   };
 
-  const handleBuyNow = () => {
-    alert(`Purchase request for ${car.name}. Our sales team will contact you to complete the purchase process.`);
+  const handleWantOne = () => {
+    onClose();
+    navigate('/contact');
   };
 
   return (
@@ -161,10 +165,10 @@ const CarDetailsModal: React.FC<CarDetailsModalProps> = ({ isOpen, onClose, car 
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={handleBuyNow}
+                  onClick={handleWantOne}
                   className="px-12 py-4 bg-black text-white font-bold rounded-lg hover:bg-gray-800 transition-colors duration-200"
                 >
-                  BUY NOW
+                  WANT ONE?
                 </motion.button>
               </div>
             </div>
